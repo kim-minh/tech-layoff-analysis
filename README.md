@@ -35,38 +35,38 @@ Với những thắc mắc về lý do đằng sau các đợt sa thải và tá
     
     Tập dữ liệu gồm nhiều tập dữ liệu con, gồm các trường sau:
     
-    - date: Ngày tháng năm ghi lại dữ liệu
-    - jobcountry: Nước mà công ty đăng bài tuyển dụng
-    - indeed_job_postings_index: % tăng trưởng số bài đăng tuyển dụng tính từ 01/02/2020
-    - display_name: Ngành tuyển dụng
+    - **`date`: Ngày tháng năm ghi lại dữ liệu**
+    - **`jobcountry`: Nước mà công ty đăng bài tuyển dụng**
+    - **`indeed_job_postings_index`: % tăng trưởng số bài đăng tuyển dụng tính từ 01/02/2020**
+    - **`display_name`: Ngành tuyển dụng**
 3. [**BEA Corporate Profits by Industry 2022-2024**](https://www.kaggle.com/datasets/kimminh21/bea-corporate-profits-by-industry-2022-2024)
     
     Đây là dữ liệu lợi nhuận doanh nghiệp theo ngành từ Cục Phân tích Kinh tế Hoa Kỳ (BEA).
     
     Tập dữ liệu có các trường sau:
     
-    - Industry:  Ngành nghề
-    - Date: Quý theo từng năm
-    - Billions of Dollars: Lợi nhuận thu về theo quý
+    - **`Industry`:  Ngành nghề**
+    - **`Date`: Quý theo từng năm**
+    - **`Billions of Dollars`: Lợi nhuận thu về theo quý**
 4. [**NASDAQ-100 Technology Sector Index 2019 - 2024**](https://www.kaggle.com/datasets/kimminh21/nasdaq-100-technology-sector-index-2019-2024)
     
     Chỉ số chứng khoán ngành công nghệ NASDAQ-100 2019 - 2024
     
     Tập dữ liệu có các trường sau:
     
-    - Date: Ngày giao dịch
-    - Close/Last: Giá đóng cửa
-    - Open: Giá mở cửa
-    - High: Giá cao nhất
-    - Low: Giá thấp nhất
+    - **`Date`: Ngày giao dịch**
+    - **`Close`/Last: Giá đóng cửa**
+    - **`Open`: Giá mở cửa**
+    - **`High`: Giá cao nhất**
+    - **`Low`: Giá thấp nhất**
 5. [**World GDP Growth**](https://www.kaggle.com/datasets/sazidthe1/world-gdp-growth)
 
     Là tập dữ liệu về GDP các nước trên thế giới, gồm thông tin quan trọng như tên quốc gia, loại chỉ số và mức tăng trưởng trung bình hàng năm của nền kinh tế từ năm 1980 đến năm 2024.
 
     Tập dữ liệu có các trường sau:
 
-    - country_name: Tên nước
-    - Các trường dữ liệu năm, từ 1980 - 2024: Giá trị GDP theo năm
+    - **`country_name`: Tên nước**
+    - **`Các trường dữ liệu năm` (1980 - 2024): Giá trị GDP theo năm**
 
 ## II. Phân tích các yếu tố ảnh hưởng, nguyên nhân của làn sóng cắt giảm nhân sự
 
