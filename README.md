@@ -1,5 +1,18 @@
 # Tech Layoff Analysis 2020 - 2024
 
+## Table of Contents
+
+- [I. Giới thiệu](#i-giới-thiệu)
+    - [1. Giới thiệu chung](#1-giới-thiệu-chung)
+    - [2. Giới thiệu dataset](#2-giới-thiệu-dataset)
+- [II. Phân tích các yếu tố ảnh hưởng, nguyên nhân của làn sóng cắt giảm nhân sự](#ii-phân-tích-các-yếu-tố-ảnh-hưởng-nguyên-nhân-của-làn-sóng-cắt-giảm-nhân-sự)
+    - [1. Về khía cạnh địa lý](#1-về-khía-cạnh-địa-lý)
+    - [2. Về khía cạnh công ty](#2-về-khía-cạnh-công-ty)
+    - [3. Về khía cạnh thời gian](#3-về-khía-cạnh-thời-gian)
+    - [4. Xu thế tuyển dụng những năm gần đây tại Mỹ](#4-xu-thế-tuyển-dụng-những-năm-gần-đây-tại-mỹ)
+    - [5. Ảnh hưởng từ kinh tế](#5-ảnh-hưởng-từ-kinh-tế)
+- [III. Kết luận](#iii-kết-luận)
+
 ## I. Giới thiệu
 
 ### 1. Giới thiệu chung
@@ -72,7 +85,7 @@ Với những thắc mắc về lý do đằng sau các đợt sa thải và tá
 
 ### 1. Về khía cạnh địa lý
 
-#### a) Mỹ và phần còn lại
+**a) Mỹ và phần còn lại**
 
 ![countries_heat_map.png](images/countries_heat_map.png)
 
@@ -80,7 +93,7 @@ Với những thắc mắc về lý do đằng sau các đợt sa thải và tá
 
 ![top_5_layoff_countries.png](images/top_5_layoff_countries.png)
 
-**Câu hỏi đầu tiên mà chắc ai trong chúng ta đặt ra là liệu nước nào, châu lục có số lượng sa thải lớn nhất?** 
+***Câu hỏi đầu tiên mà chắc ai trong chúng ta đặt ra là liệu nước nào, châu lục có số lượng sa thải lớn nhất?***
 
 Bằng cách vẽ 3 biểu đồ: 1. Biểu đồ heat map theo các nước trên thế giới 2. Biểu đồ số lượng sa thải theo các châu lục (Continent) và 3. Biểu đồ số lượng sa thải của top 5 nước sa thải nhiều nhất, ta có thể rút ra kết luận như sau:
 
@@ -90,23 +103,23 @@ Mỹ chứng kiến số lượng người bị sa thải cao nhất, với xấ
 
 Các công ty Ấn Độ đứng thứ hai về tỷ lệ sa thải người, với gần 50.000 nhân viên từ các công ty Ấn Độ mất việc, tiếp theo là Đức và Vương quốc Anh.
 
-#### b) Ấn độ có tổng số người sa thải hơn hẳn châu Á, châu Âu có phần cân bằng hơn.
+**b) Ấn độ có tổng số người sa thải hơn hẳn châu Á, châu Âu có phần cân bằng hơn.**
 
 ![top_3_layoff_by_continents.png](images/top_3_layoff_by_continents.png)
 
 Phía trên là biểu đồ về top 3 nước của Châu Mỹ, Châu Âu, Châu Á về tổng số người bị sa thải. Với màu xanh thì ta có thể thấy số người sa thải ở Hoa Kỳ hơn hẳn so với châu Mỹ. Tương tự là Ấn Độ ở Châu Á. Châu Âu có phần cân bằng hơn.
 
-**Một số lí do cho việc Ấn Độ có lượng sa thải lớn nhất Châu Á**
+***Một số lí do cho việc Ấn Độ có lượng sa thải lớn nhất Châu Á***
 
 - Lực lượng lao động lớn: Ấn Độ có lực lượng lao động lớn, với hơn 500 triệu người làm việc trong nhiều lĩnh vực khác nhau. Điều này có nghĩa là ngay cả một tỷ lệ nhỏ bị sa thải cũng có thể chuyển thành một con số lớn.
 - Ngành Tech lớn, và Ấn độ là điểm đến phổ biến cho outsourcing phần mềm: Cho nên các công ty tech lớn của Ấn Độ thường phải tái cơ cấu và sa thải cho phù hợp với xu thế thế giới.
 
-**Một số lí do cho việc Châu Âu có số lượng sa thải câng bằng hơn: Liên minh Châu Âu có một số bộ luật như sau:**
+***Một số lí do cho việc Châu Âu có số lượng sa thải câng bằng hơn: Liên minh Châu Âu có một số bộ luật như sau:***
 
 - Bộ luật bảo vệ người lao động, văn hoá quyền lợi công nhân: Liên minh châu Âu (EU) có các luật lao động và quy định nghiêm ngặt bảo vệ quyền lợi của công nhân, bao gồm cả những quy định liên quan đến việc sa thải. Ví dụ, Chỉ thị “**Collective Redundancies - 1988”** đặt ra qui định doanh nghiệp cần tham vấn ý kiến của người lao động khi có ý định sa thải trên 20 người trong vòng 90 ngày.
 - Hỗ trợ từ chính phủ: EU thường hỗ trợ cho các ngành khi gặp khó khăn, điều này dẫn tới giảm thiểu tình trạng sa thải nhân viên thay vào đó tái cơ cấu và thích ứng với khó khăn.
 
-#### Tuy nhiên, số lượng sa thải nhiều không tương đương với việc xác suất bạn mất việc có cao không.
+***Tuy nhiên, số lượng sa thải nhiều không tương đương với việc xác suất bạn mất việc có cao không.***
 
 ![layoff_by_countries.png](images/layoff_by_countries.png)
 
@@ -114,7 +127,7 @@ Phía trên là biểu đồ về top 3 nước của Châu Mỹ, Châu Âu, Ch�
 
 - Biểu đồ 1
     
-    ### **Đây là biểu đồ về tổng số lượng sa thải và trung bình tỷ lệ sa thải theo quốc gia**
+    ***Đây là biểu đồ về tổng số lượng sa thải và trung bình tỷ lệ sa thải theo quốc gia***
     
     Mặc dù **Hoa Kỳ** có tổng số lượng sa thải rất cao nhưng tỉ lệ sa thải không cao lắm. Các nước theo sau Hoa Kỳ về tổng số lượng sa thải như Ấn Độ, Đức, Vương quốc Anh đều có phần trăm sa thải trung bình ở mức cao hơn Hoa Kỳ. 
     
@@ -126,7 +139,7 @@ Phía trên là biểu đồ về top 3 nước của Châu Mỹ, Châu Âu, Ch�
     
 - Nhìn chung
     
-    **Lí giải một số yếu tố tác động đến xác suất sa thải:**
+    ***Lí giải một số yếu tố tác động đến xác suất sa thải:***
     
     1. **Tác động của quy mô công ty**:
         - Các công ty qui mô lớn ở Hoa Kỳ đã góp phần gây ra số lượng sa thải khổng lồ do lực lượng lao động lớn của họ. Khi các công ty này sa thải, số lượng nhân viên bị ảnh hưởng cao, nhưng tỷ lệ phần trăm có thể không cao như các công ty nhỏ hơn ở các quốc gia khác.
@@ -139,7 +152,7 @@ Phía trên là biểu đồ về top 3 nước của Châu Mỹ, Châu Âu, Ch�
             - Lãi suất cao làm cho việc vay tiêu dùng như vay mua nhà, mua xe trở nên đắt đỏ hơn. Người tiêu dùng có xu hướng chi tiêu ít hơn, dẫn đến giảm doanh thu cho các doanh nghiệp. Khi doanh thu giảm, doanh nghiệp có thể phải cắt giảm chi phí, bao gồm cả việc sa thải nhân viên.
             - Lãi suất cao có thể làm tăng giá trị đồng bảng Anh, làm cho hàng hóa xuất khẩu của Anh trở nên đắt đỏ hơn đối với người tiêu dùng nước ngoài. Điều này có thể giảm xuất khẩu, làm giảm nhu cầu sản xuất và từ đó dẫn đến giảm nhu cầu lao động.
     
-    **Phần kết luận:**
+    ***Phần kết luận:***
 
     - Tóm lại, chỉ riêng số lượng sa thải không cung cấp một bức tranh hoàn chỉnh về tác động của thị trường việc làm. Tỷ lệ sa thải là rất quan trọng để hiểu được tác động tương đối đối với nhân viên.
     - Hoa Kỳ có số lượng sa thải cao nhất do có nhiều công ty lớn nhưng tỷ lệ sa thải ở mức vừa phải.
@@ -148,7 +161,7 @@ Phía trên là biểu đồ về top 3 nước của Châu Mỹ, Châu Âu, Ch�
     Bằng cách xem xét cả số lượng sa thải và tỷ lệ sa thải, chúng ta có thể hiểu rõ hơn về động lực của an ninh việc làm và môi trường kinh tế ở các quốc gia khác nhau.
     
 
-#### c) Khu vực SF Bay Area và phần còn lại
+**c) Khu vực SF Bay Area và phần còn lại**
 
 ![top_layoff_by_area.png](images/top_layoff_by_area.png)
 
@@ -165,7 +178,7 @@ Một số lí do khiến Thung lũng Silicon có số lượng sa thải lớn:
 
 ### 2. Về khía cạnh công ty
 
-#### a) Các công ty tới từ Mỹ và Amazon
+**a) Các công ty tới từ Mỹ và Amazon**
 
 ![top_layoff_by_companies.png](images/top_layoff_by_companies.png)
 
@@ -178,7 +191,7 @@ Ngoài ra, ta có câu hỏi: **Tại sao Tesla đứng đầu bảng với tậ
 - Sau đó, doanh số bán lẻ nói chung và thương mại điện tử nói riêng tiếp tục ảnh hưởng bởi sự suy thoái kinh tế.
 - Từ đó, các công ty Thương mại điện tử như Amazon bị ảnh hưởng nhiều nhất, dẫn tới làn sóng lay off lớn nhất.
 
-#### b) Industry nào sa thải nhiều nhất?
+**b) Ngành công nghiệp nào sa thải nhiều nhất?**
 
 ![layoff_by_industry.png](images/layoff_by_industry.png)
 
@@ -186,7 +199,7 @@ Biểu đồ này thể hiện tổng số lượng sa thải theo ngành công 
 
 Ngành bán lẻ chứng kiến số lượng sa thải cao nhất do sự gia tăng của thương mại điện tử và công nghệ bán hàng tự động, đặc biệt sau đại dịch COVID-19, khi mà nhiều người tiêu dùng đã thay đổi thói quen tiêu dùng và chuyển sang mua sắm trực tuyến. Thêm vào đó, các chuỗi cung ứng bị ảnh hưởng bởi biến động kinh tế toàn cầu cũng góp phần làm suy yếu hoạt động kinh doanh truyền thống.
 
-#### c) Công ty lớn nhỏ, kinh tế của công ty, Stage của công ty có ảnh hưởng thế nào đến việc công ty sa thải
+**c) Công ty lớn nhỏ, kinh tế của công ty, Stage của công ty có ảnh hưởng thế nào đến việc công ty sa thải**
 
 - Vốn hoá
     
@@ -214,7 +227,7 @@ Ngành bán lẻ chứng kiến số lượng sa thải cao nhất do sự gia t
 
 ### 3. Về khía cạnh thời gian
 
-#### a) Phân bổ trung bình theo tháng của cắt giảm nhân sự
+**a) Phân bổ trung bình theo tháng của cắt giảm nhân sự**
 
 ![monthly_layoff_distribution.png](images/monthly_layoff_distribution.png)
 
@@ -226,7 +239,7 @@ Tháng có lượng đuổi việc lớn thứ 2 là tháng 11. Tháng 11 là th
 
 Các tháng còn lại đều có lượng cắt giảm nhân sự tương đối đồng đều.
 
-#### b) Xu hướng cắt giảm nhân sự theo năm
+**b) Xu hướng cắt giảm nhân sự theo năm**
 
 ![layoff_trend.png](images/layoff_trend.png)
 
@@ -268,7 +281,7 @@ Tuy nhiên, đến đầu năm 2023, phần lớn các công ty đều đã quay
 
 ### 5. Ảnh hưởng từ kinh tế
 
-#### a) Lợi nhuận thu về mỗi năm
+**a) Lợi nhuận thu về mỗi năm**
 
 ![us_bea_profits.png](images/us_bea_profits.png)
 
@@ -276,13 +289,13 @@ Ta thấy lợi nhuận của các công ty công nghệ tại Mỹ chạm đáy
 
 Ta có thể suy ra rằng lợi nhuận giảm rõ ràng là một nguyên nhân lớn gây ảnh hưởng đến sự cắt giảm nhân sự lớn năm 2023, tuy nhiên sau đó lợi nhuận các công ty này đã tăng trở lại, mặc dù xu hướng cắt giảm nhân sự không hề thay đổi, vẫn tiếp tục tăng. Lý do cho việc này có thể là do sự xuất hiện của AI, tăng trưởng lợi nhuận cho các công ty có sản phẩm AI, đặc biệt là những công ty lớn.
 
-#### b) Giá cổ phiếu các công ty công nghệ trên sàn NASDAQ
+**b) Giá cổ phiếu các công ty công nghệ trên sàn NASDAQ**
 
 ![nasdaq_tech.png](images/nasdaq_tech.png)
 
 Giá cổ phiếu của 100 công ty công nghệ lớn nhất thuộc sàn NASDAQ tỷ lệ thuận với lợi nhuận thu về. Cho thấy sự tương quan rõ ràng giữa giá cổ phiếu của công ty với lợi nhuận và tình trạng buộc thôi việc của các công ty này tại những thời điểm trên biểu đồ.
 
-#### c) Tăng trưởng GDP
+**c) Tăng trưởng GDP**
 
 ![us_gdp.png](images/us_gdp.png)
 
