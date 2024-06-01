@@ -1,8 +1,8 @@
-# Tech Layoff Analysis 
+# Tech Layoff Analysis 2020 - 2024
 
-# Giới thiệu
+## I. Giới thiệu
 
-## Giới thiệu chung
+### 1. Giới thiệu chung
 
 Hiện nay, cắt giảm nhân sự đang trở thành một trong những vấn đề nhức nhối đối với cả người lao động và doanh nghiệp và cả chúng ta. Trong bối cảnh kinh tế toàn cầu không ổn định và sự cạnh tranh ngày càng khốc liệt, nhiều công ty đã buộc phải cắt giảm nhân sự để duy trì hoạt động. Điều này không chỉ ảnh hưởng đến các cá nhân bị sa thải mà còn tạo ra tâm lý bất an trong những người lao động hiện tại, ngoài ra còn tác động tiêu cực đến năng suất và tinh thần làm việc của họ.
 
@@ -10,11 +10,11 @@ Làn sóng cắt giảm nhân sự này xuất phát từ nhiều lý do, bao g�
 
 Với những thắc mắc về lý do đằng sau các đợt sa thải và tác động của chúng đối với từng cá nhân và tổ chức, việc phân tích dữ liệu sa thải trở nên cực kỳ quan trọng. Bài thuyết trình này sẽ tập trung vào việc sử dụng các phương pháp phân tích dữ liệu để khám phá, phân tích các dữ liệu liên quan đến tình trạng cắt giảm nhân sự, nhằm giúp chúng ta hiểu rõ hơn về các xu hướng, nguyên nhân và tác động của hiện tượng này.
 
-## Giới thiệu dataset
+### 2. Giới thiệu dataset
 
 1. [Layoff Dataset 2024](https://www.kaggle.com/datasets/theakhilb/layoffs-data-2022)
     
-    Đây là tập dữ liệu được thu thập từ trang web “Layoffs.fyi” - Một trang web được tạo ra để theo dõi tình trạng lay off kể từ dịch COVID-19.
+    Đây là tập dữ liệu được thu thập từ trang web [Layoffs.fyi](https://layoffs.fyi) - Một trang web được tạo ra để theo dõi tình trạng lay off kể từ dịch COVID-19.
     
     Tập dữ liệu có các trường sau:
     
@@ -68,11 +68,11 @@ Với những thắc mắc về lý do đằng sau các đợt sa thải và tá
     - country_name: Tên nước
     - Các trường dữ liệu năm, từ 1980 - 2024: Giá trị GDP theo năm
 
-# Phân tích các yếu tố ảnh hưởng, nguyên nhân của làn sóng cắt giảm nhân sự
+## II. Phân tích các yếu tố ảnh hưởng, nguyên nhân của làn sóng cắt giảm nhân sự
 
-## Về khía cạnh địa lý
+### 1. Về khía cạnh địa lý
 
-### Mỹ và phần còn lại
+#### a) Mỹ và phần còn lại
 
 ![countries_heat_map.png](images/countries_heat_map.png)
 
@@ -90,7 +90,7 @@ Mỹ chứng kiến số lượng người bị sa thải cao nhất, với xấ
 
 Các công ty Ấn Độ đứng thứ hai về tỷ lệ sa thải người, với gần 50.000 nhân viên từ các công ty Ấn Độ mất việc, tiếp theo là Đức và Vương quốc Anh.
 
-### Ấn độ có tổng số người sa thải hơn hẳn châu Á, châu Âu có phần cân bằng hơn.
+#### b) Ấn độ có tổng số người sa thải hơn hẳn châu Á, châu Âu có phần cân bằng hơn.
 
 ![top_3_layoff_by_continents.png](images/top_3_layoff_by_continents.png)
 
@@ -106,7 +106,7 @@ Phía trên là biểu đồ về top 3 nước của Châu Mỹ, Châu Âu, Ch�
 - Bộ luật bảo vệ người lao động, văn hoá quyền lợi công nhân: Liên minh châu Âu (EU) có các luật lao động và quy định nghiêm ngặt bảo vệ quyền lợi của công nhân, bao gồm cả những quy định liên quan đến việc sa thải. Ví dụ, Chỉ thị “**Collective Redundancies - 1988”** đặt ra qui định doanh nghiệp cần tham vấn ý kiến của người lao động khi có ý định sa thải trên 20 người trong vòng 90 ngày.
 - Hỗ trợ từ chính phủ: EU thường hỗ trợ cho các ngành khi gặp khó khăn, điều này dẫn tới giảm thiểu tình trạng sa thải nhân viên thay vào đó tái cơ cấu và thích ứng với khó khăn.
 
-### Tuy nhiên, số lượng sa thải nhiều không tương đương với việc xác suất bạn mất việc có cao không.
+#### Tuy nhiên, số lượng sa thải nhiều không tương đương với việc xác suất bạn mất việc có cao không.
 
 ![layoff_by_countries.png](images/layoff_by_countries.png)
 
@@ -126,7 +126,7 @@ Phía trên là biểu đồ về top 3 nước của Châu Mỹ, Châu Âu, Ch�
     
 - Nhìn chung
     
-    ### Lí giải một số yếu tố tác động đến xác suất sa thải:
+    **Lí giải một số yếu tố tác động đến xác suất sa thải:**
     
     1. **Tác động của quy mô công ty**:
         - Các công ty qui mô lớn ở Hoa Kỳ đã góp phần gây ra số lượng sa thải khổng lồ do lực lượng lao động lớn của họ. Khi các công ty này sa thải, số lượng nhân viên bị ảnh hưởng cao, nhưng tỷ lệ phần trăm có thể không cao như các công ty nhỏ hơn ở các quốc gia khác.
@@ -139,8 +139,8 @@ Phía trên là biểu đồ về top 3 nước của Châu Mỹ, Châu Âu, Ch�
             - Lãi suất cao làm cho việc vay tiêu dùng như vay mua nhà, mua xe trở nên đắt đỏ hơn. Người tiêu dùng có xu hướng chi tiêu ít hơn, dẫn đến giảm doanh thu cho các doanh nghiệp. Khi doanh thu giảm, doanh nghiệp có thể phải cắt giảm chi phí, bao gồm cả việc sa thải nhân viên.
             - Lãi suất cao có thể làm tăng giá trị đồng bảng Anh, làm cho hàng hóa xuất khẩu của Anh trở nên đắt đỏ hơn đối với người tiêu dùng nước ngoài. Điều này có thể giảm xuất khẩu, làm giảm nhu cầu sản xuất và từ đó dẫn đến giảm nhu cầu lao động.
     
-    ### **Phần kết luận:**
-    
+    **Phần kết luận:**
+
     - Tóm lại, chỉ riêng số lượng sa thải không cung cấp một bức tranh hoàn chỉnh về tác động của thị trường việc làm. Tỷ lệ sa thải là rất quan trọng để hiểu được tác động tương đối đối với nhân viên.
     - Hoa Kỳ có số lượng sa thải cao nhất do có nhiều công ty lớn nhưng tỷ lệ sa thải ở mức vừa phải.
     - Các quốc gia như Vương quốc Anh và Singapore có tỷ lệ sa thải cao hơn, cho thấy tác động lớn hơn đến lực lượng lao động khi tình trạng sa thải xảy ra.
@@ -148,7 +148,7 @@ Phía trên là biểu đồ về top 3 nước của Châu Mỹ, Châu Âu, Ch�
     Bằng cách xem xét cả số lượng sa thải và tỷ lệ sa thải, chúng ta có thể hiểu rõ hơn về động lực của an ninh việc làm và môi trường kinh tế ở các quốc gia khác nhau.
     
 
-### Khu vực SF Bay Area và phần còn lại
+#### c) Khu vực SF Bay Area và phần còn lại
 
 ![top_layoff_by_area.png](images/top_layoff_by_area.png)
 
@@ -163,9 +163,9 @@ Một số lí do khiến Thung lũng Silicon có số lượng sa thải lớn:
 - Nhiều công ty khởi nghiệp ở Khu vực Vịnh SF dựa vào nguồn vốn đầu tư mạo hiểm để thúc đẩy sự phát triển của họ.
 - Ngành công nghệ không ngừng phát triển, với các công nghệ và xu hướng mới luôn xuất hiện.
 
-## Về khía cạnh công ty
+### 2. Về khía cạnh công ty
 
-### Các công ty tới từ Mỹ và Amazon
+#### a) Các công ty tới từ Mỹ và Amazon
 
 ![top_layoff_by_companies.png](images/top_layoff_by_companies.png)
 
@@ -178,7 +178,7 @@ Ngoài ra, ta có câu hỏi: **Tại sao Tesla đứng đầu bảng với tậ
 - Sau đó, doanh số bán lẻ nói chung và thương mại điện tử nói riêng tiếp tục ảnh hưởng bởi sự suy thoái kinh tế.
 - Từ đó, các công ty Thương mại điện tử như Amazon bị ảnh hưởng nhiều nhất, dẫn tới làn sóng lay off lớn nhất.
 
-### Industry nào sa thải nhiều nhất?
+#### b) Industry nào sa thải nhiều nhất?
 
 ![layoff_by_industry.png](images/layoff_by_industry.png)
 
@@ -186,7 +186,7 @@ Biểu đồ này thể hiện tổng số lượng sa thải theo ngành công 
 
 Ngành bán lẻ chứng kiến số lượng sa thải cao nhất do sự gia tăng của thương mại điện tử và công nghệ bán hàng tự động, đặc biệt sau đại dịch COVID-19, khi mà nhiều người tiêu dùng đã thay đổi thói quen tiêu dùng và chuyển sang mua sắm trực tuyến. Thêm vào đó, các chuỗi cung ứng bị ảnh hưởng bởi biến động kinh tế toàn cầu cũng góp phần làm suy yếu hoạt động kinh doanh truyền thống.
 
-### Công ty lớn nhỏ, kinh tế của công ty, Stage của công ty có ảnh hưởng thế nào đến việc công ty sa thải
+#### c) Công ty lớn nhỏ, kinh tế của công ty, Stage của công ty có ảnh hưởng thế nào đến việc công ty sa thải
 
 - Vốn hoá
     
@@ -212,9 +212,9 @@ Ngành bán lẻ chứng kiến số lượng sa thải cao nhất do sự gia t
     Năm 2024 có thể đánh dấu sự biến động trong kinh tế toàn cầu, ảnh hưởng đến thị trường tài chính và đầu tư. Việc áp dụng công nghệ mới và tự động hóa trong quá trình sản xuất và quản lý có thể dẫn đến việc cắt giảm nhân sự để giảm chi phí và tăng năng suất, đặc biệt là ở các công ty lớn hơn đã có cơ cấu ổn định.
     
 
-## Về khía cạnh thời gian
+### 3. Về khía cạnh thời gian
 
-### Phân bổ trung bình theo tháng của cắt giảm nhân sự
+#### a) Phân bổ trung bình theo tháng của cắt giảm nhân sự
 
 ![monthly_layoff_distribution.png](images/monthly_layoff_distribution.png)
 
@@ -226,7 +226,7 @@ Tháng có lượng đuổi việc lớn thứ 2 là tháng 11. Tháng 11 là th
 
 Các tháng còn lại đều có lượng cắt giảm nhân sự tương đối đồng đều.
 
-### Xu hướng cắt giảm nhân sự theo năm
+#### b) Xu hướng cắt giảm nhân sự theo năm
 
 ![layoff_trend.png](images/layoff_trend.png)
 
@@ -242,7 +242,7 @@ Nếu ta nhìn vào biểu đồ phân tán trong quãng thời gian này, ta v�
 
 Ngoài ra, có một lí do lớn nữa của sự sa thải có vẻ lớn hơn xu hướng, đạt đinh ở năm 2023 là do lí do xu thế tuyển dụng sẽ được trình bày sau đây:
 
-## Xu thế tuyển dụng những năm gần đây tại Mỹ
+### 4. Xu thế tuyển dụng những năm gần đây tại Mỹ
 
 ![us_jobs.png](images/us_jobs.png)
 
@@ -266,9 +266,9 @@ Từ cuối năm 2020 đến giữa năm 2022 cũng là thời điểm các côn
 
 Tuy nhiên, đến đầu năm 2023, phần lớn các công ty đều đã quay trở lại hình thức làm việc trực tiếp, dẫn đến nhu cầu sử dụng ứng dụng liên lạc giảm sút, lượng công việc cần để duy trì những ứng dụng này cũng giảm, ít hơn hẳn so với lượng nhân sự có sẵn. Ngoài ra, thị trường tuyển dụng còn ảnh hưởng một phẩn bời AI.
 
-## Ảnh hưởng từ kinh tế
+### 5. Ảnh hưởng từ kinh tế
 
-### Lợi nhuận thu về mỗi năm
+#### a) Lợi nhuận thu về mỗi năm
 
 ![us_bea_profits.png](images/us_bea_profits.png)
 
@@ -276,13 +276,13 @@ Ta thấy lợi nhuận của các công ty công nghệ tại Mỹ chạm đáy
 
 Ta có thể suy ra rằng lợi nhuận giảm rõ ràng là một nguyên nhân lớn gây ảnh hưởng đến sự cắt giảm nhân sự lớn năm 2023, tuy nhiên sau đó lợi nhuận các công ty này đã tăng trở lại, mặc dù xu hướng cắt giảm nhân sự không hề thay đổi, vẫn tiếp tục tăng. Lý do cho việc này có thể là do sự xuất hiện của AI, tăng trưởng lợi nhuận cho các công ty có sản phẩm AI, đặc biệt là những công ty lớn.
 
-### Giá cổ phiếu các công ty công nghệ trên sàn NASDAQ
+#### b) Giá cổ phiếu các công ty công nghệ trên sàn NASDAQ
 
 ![nasdaq_tech.png](images/nasdaq_tech.png)
 
 Giá cổ phiếu của 100 công ty công nghệ lớn nhất thuộc sàn NASDAQ tỷ lệ thuận với lợi nhuận thu về. Cho thấy sự tương quan rõ ràng giữa giá cổ phiếu của công ty với lợi nhuận và tình trạng buộc thôi việc của các công ty này tại những thời điểm trên biểu đồ.
 
-### Tăng trưởng GDP
+#### c) Tăng trưởng GDP
 
 ![us_gdp.png](images/us_gdp.png)
 
@@ -290,7 +290,7 @@ Giá cổ phiếu của 100 công ty công nghệ lớn nhất thuộc sàn NASD
 
 Vậy nền kinh tế giảm sút cũng là một nguyên nhân dẫn đến làn sóng cắt giảm nhân sự của các công ty công nghệ. 
 
-# Kết luận
+## III. Kết luận
 
 Qua việc phân tích dữ liệu sa thải, ta thấy rõ các yếu tố dẫn đến làn sóng sa thải nhân viên tại các công ty công nghệ ở các khu vực địa lý khác nhau qua từng thời kỳ. Mặc dù Mỹ dẫn đầu về tổng lượng sa thải, xác suất sa thải cho từng nhân viên cá nhân lại tương đối thấp hơn so với các quốc gia như Ấn Độ và Đức, nơi tỷ lệ sa thải cao hơn.
 
